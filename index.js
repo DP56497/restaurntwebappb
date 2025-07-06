@@ -14,6 +14,10 @@ require("dotenv").config();
 
 //Middleware
 app.use(cors());
+app.use(cors({
+  origin: 'https://restaurntwebapp.onrender.com', // replace with actual frontend URL
+  credentials: true // if you're using cookies or sessions
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended:true}));
 
