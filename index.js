@@ -15,7 +15,7 @@ require("dotenv").config();
 //Middleware
 app.use(cors());
 app.use(cors({
-  origin: 'https://restaurntwebfrunt.onrender.com', // replace with actual frontend URL
+  origin: 'https://restoarnt.onrender.com', // replace with actual frontend URL
   credentials: true // if you're using cookies or sessions
 }));
 app.use(express.json());
@@ -37,3 +37,4 @@ app.use("/api/" , forgotPassword)
 connectToMongoDB();
 
 app.listen(PORT, () => console.log(`Srver is Stared at PORT : ${PORT}`));
+
